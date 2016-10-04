@@ -2,6 +2,6 @@
 
 use Illuminate\Http\Request;
 
-Route::group(['middleware' => 'cors'], function(Router $router){
-    $router->resource('/category', 'API\CategoryController');
+Route::group(['middleware' => 'cors'], function(){
+    Route::resource('/category', 'API\CategoryController');
 });
