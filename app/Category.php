@@ -9,4 +9,8 @@ class Category extends Model
     
     protected $fillable = ['name'];
 
+    public function texts()
+    {
+        return $this->hasMany(\App\Text::class);
+    }
 }
