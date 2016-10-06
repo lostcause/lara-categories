@@ -45,9 +45,9 @@ class TextController extends Controller
         return $text;
     }
 
-    public function destroy($id)
+    public function destroy($category, $text)
     {
-        $text = Text::findOrFail($id);
+        $text = Text::findOrFail($text);
         $text->delete();
 
         return true;
