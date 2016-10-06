@@ -50,7 +50,7 @@ class TextController extends Controller
         $text = Text::findOrFail($text);
         $text->delete();
 
-        return true;
+        return response()->json([]);
     }
 
 }
